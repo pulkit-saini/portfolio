@@ -1,0 +1,146 @@
+
+
+
+#contianer{
+ 
+    display: grid ;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    justify-content: center;
+    background-image: url(./media/front\ \ page\ background3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+
+}
+
+#name-section{
+    display: flex;
+    grid-area: 1/2/2/3;
+    justify-content: center;
+    align-items:center;
+  
+    
+
+}
+#circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+ 
+#details-section{
+    display: flex;
+    grid-area:2 / 2 / 3 / 3 ;
+    align-items: start;
+    justify-content: center;
+    
+    
+}
+
+button{
+    margin-right: 3em;
+    margin-left: 3em;
+    
+}
+
+
+p{
+    font-size: 3vw ;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: rgb(235, 184, 64);
+    
+}
+
+#name{
+    font-size: 6vw ;
+}
+.playfair-fonts {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style:italic;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .source-serif-4-fonts {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  span{
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+
+
+  @media (max-width: 575.98px) {
+    /* Styles for phones */
+
+    #circle>p{
+        font-size: xx-large;
+
+    }
+
+    #details-section button{
+        margin: 2px;
+    }
+
+
+  }
+
+  @media (min-width:576px) and ( max-width: 768px) {
+    /* Styles for small devices */
+
+    #circle>p{
+        font-size: 3em ;
+
+    }
+
+    #details-section button{
+        margin: 3px ;
+    }
+
+
+  }
+
+  @media (min-width:769px) and ( max-width: 991px) {
+     /* Styles for tablets */
+
+    #circle>p{
+        font-size: 3em;
+
+    }
+
+    #details-section button{
+        margin: 3px ;
+    }
+
+
+  }
+
+
+  @media (min-width: 992px) {
+    
+    #circle>p{
+        font-size: 3em ;
+
+    }
+
+    #details-section button{
+        margin: 4px ;
+    }
+
+  }
